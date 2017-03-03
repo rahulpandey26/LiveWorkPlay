@@ -105,8 +105,7 @@ public class SendStoryActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View view) {
-        int id = view.getId();
-        switch (id) {
+        switch (view.getId()) {
             case R.id.add_image_btn:
                 // check for title and description of story is not null
                 if(mTitleText.getText().toString().matches("") || mStoryDescText.getText().toString().matches("")){

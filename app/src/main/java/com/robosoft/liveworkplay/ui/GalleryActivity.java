@@ -125,8 +125,7 @@ public class GalleryActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View view) {
-        int id = view.getId();
-        switch (id) {
+        switch (view.getId()) {
             case R.id.next_btn:
                 if (mSelectedGalleryItem.size() == 0)
                     Util.showAlertMessage(this, getResources().getString(R.string.select_data_alert_msg));

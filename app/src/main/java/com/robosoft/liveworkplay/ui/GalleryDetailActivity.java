@@ -70,8 +70,7 @@ public class GalleryDetailActivity extends AppCompatActivity implements OnSendAb
 
     @Override
     public void onClick(View view) {
-        int id = view.getId();
-        switch (id) {
+        switch (view.getId()) {
             case R.id.next_btn:
                 Intent intent = new Intent(this, SendStoryActivity.class);
                 intent.putStringArrayListExtra(Constants.EXTRA_INTENT_SELECTED_IMAGE, (ArrayList<String>) mSelectedGalleryItem);
