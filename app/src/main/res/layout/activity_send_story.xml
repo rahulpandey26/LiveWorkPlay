@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.robosoft.liveworkplay.ui.SendStoryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/send_story_toolabar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/toolbar_back_arrow_padding_left"
+                android:src="@drawable/close" />
+
+            <TextView
+                android:id="@+id/top_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/toolbar_title_your_story"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:text="@string/submit"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/small_text_size"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_layout_height"
+        android:layout_below="@id/send_story_toolabar"
+        android:background="#E8E2E2" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send_story_toolabar"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="Title"
+        android:imeOptions="actionNext"
+        android:paddingBottom="@dimen/story_title_padding_bottom"
+        android:paddingLeft="@dimen/story_desc_padding_left"
+        android:paddingTop="@dimen/story_title_padding_top"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_layout_height"
+        android:layout_below="@id/title"
+        android:background="#E8E2E2" />
+
+
+    <EditText
+        android:id="@+id/story_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="Tell Us Your Story (500 Characters)"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:lines="12"
+        android:maxLength="500"
+        android:paddingLeft="@dimen/story_desc_padding_left"
+        android:paddingRight="@dimen/story_desc_padding_right"
+        android:paddingTop="@dimen/story_desc_padding_top" />
+
+    <TextView
+        android:id="@+id/count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="@dimen/char_count_margin_left"
+        android:layout_marginTop="@dimen/char_count_margin_top"
+        android:textSize="@dimen/small_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_layout_height"
+        android:layout_below="@id/story_desc"
+        android:background="#E8E2E2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/story_desc">
+
+        <ImageView
+            android:id="@+id/add_image_btn"
+            android:layout_width="@dimen/add_icon_width"
+            android:layout_height="@dimen/add_icon_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/add" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/selected_image_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginRight="@dimen/send_story_recycler_view_margin_right">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</RelativeLayout>

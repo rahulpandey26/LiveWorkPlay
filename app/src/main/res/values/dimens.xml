@@ -1,0 +1,50 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="gallery_image_height">120dp</dimen>
+    <dimen name="gallery_image_width">120dp</dimen>
+
+    <dimen name="send_story_image_height">100dp</dimen>
+    <dimen name="send_story_image_width">100dp</dimen>
+    <dimen name="add_icon_height">100dp</dimen>
+    <dimen name="add_icon_width">120dp</dimen>
+    <dimen name="play_icon_height">50dp</dimen>
+    <dimen name="play_icon_width">50dp</dimen>
+    <dimen name="select_icon_height">30dp</dimen>
+    <dimen name="select_icon_width">30dp</dimen>
+    <dimen name="large_text_size">20sp</dimen>
+    <dimen name="small_text_size">16sp</dimen>
+    <dimen name="story_desc_padding_left">15dp</dimen>
+    <dimen name="story_desc_padding_right">15dp</dimen>
+    <dimen name="story_desc_padding_top">15dp</dimen>
+    <dimen name="story_title_padding_top">18dp</dimen>
+    <dimen name="story_title_padding_bottom">15dp</dimen>
+    <dimen name="view_layout_height">2dp</dimen>
+    <dimen name="char_count_margin_top">225dp</dimen>
+    <dimen name="char_count_margin_left">325dp</dimen>
+
+    <dimen name="send_story_recycler_view_margin_right">5dp</dimen>
+    <dimen name="remove_icon_height">30dp</dimen>
+    <dimen name="remove_icon_width">30dp</dimen>
+
+    <dimen name="toolbar_back_arrow_padding_left">15dp</dimen>
+    <dimen name="toolbar_back_arrow_padding_right">15dp</dimen>
+    <dimen name="toolbar_back_arrow_padding_top">2dp</dimen>
+    <dimen name="toolbar_back_arrow_padding_bottom">2dp</dimen>
+
+    <dimen name="select_icon_margin_left">80dp</dimen>
+    <dimen name="select_icon_margin_top">70dp</dimen>
+    <dimen name="play_icon_margin_left">35dp</dimen>
+    <dimen name="play_icon_margin_top">35dp</dimen>
+
+    <dimen name="send_story_play_icon_margin_left">30dp</dimen>
+    <dimen name="send_story_play_icon_margin_top">25dp</dimen>
+    <dimen name="tell_us_padding_bottom">20dp</dimen>
+    <dimen name="tell_us_padding_left">25dp</dimen>
+    <dimen name="tell_us_padding_top">20dp</dimen>
+    <dimen name="tell_us_margin_top">380dp</dimen>
+
+
+</resources>

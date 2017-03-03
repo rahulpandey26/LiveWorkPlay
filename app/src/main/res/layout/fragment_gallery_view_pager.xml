@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_layout_height"
+        android:layout_below="@id/gallery_detail_toolabar"
+        android:background="#E8E2E2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/gallery_detail_toolabar"
+            android:layout_weight="4">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/story_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/tell_us_margin_top"
+                android:background="#55000000"
+                android:gravity="start"
+                android:hint="@string/more_about_image"
+                android:inputType="textMultiLine"
+                android:paddingBottom="@dimen/tell_us_padding_bottom"
+                android:paddingLeft="@dimen/tell_us_padding_left"
+                android:paddingTop="@dimen/tell_us_padding_top"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/large_text_size"
+                android:textColorHint="@android:color/white"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gallery_detail_recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/send_story_recycler_view_margin_right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

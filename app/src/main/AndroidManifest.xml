@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.robosoft.liveworkplay">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.SendStoryActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.GalleryActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.GalleryDetailActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity android:name=".ui.SentSucessfulActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

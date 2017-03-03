@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.robosoft.liveworkplay.helper.CustomImageView
+        android:id="@+id/selected_image"
+        android:layout_width="@dimen/send_story_image_width"
+        android:layout_height="@dimen/send_story_image_height"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/play_video_image"
+        android:layout_width="@dimen/play_icon_width"
+        android:layout_height="@dimen/play_icon_height"
+        android:layout_marginLeft="@dimen/send_story_play_icon_margin_left"
+        android:layout_marginTop="@dimen/send_story_play_icon_margin_top"
+        android:scaleType="fitXY"
+        android:src="@drawable/play"
+        android:visibility="gone" />
+
+</RelativeLayout>
