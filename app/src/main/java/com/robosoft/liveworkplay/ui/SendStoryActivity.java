@@ -186,7 +186,6 @@ public class SendStoryActivity extends AppCompatActivity implements View.OnClick
             });
             builder.show();
         } catch (Exception e) {
-            //  if (net.one97.paytm.common.utility.CJRAppCommonUtility.isDebug) e.printStackTrace();
         }
     }
 

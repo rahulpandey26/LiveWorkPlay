@@ -12,9 +12,9 @@
         <ImageView
             android:id="@+id/gallery_image"
             android:layout_width="match_parent"
-            android:layout_height="450dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
+            android:layout_height="@dimen/gallery_image_view_pager_height"
+            android:paddingLeft="@dimen/gallery_image_view_pager_padding_left"
+            android:paddingRight="@dimen/gallery_image_view_pager_padding_right"
             android:scaleType="fitXY" />
 
         <TextView
@@ -23,10 +23,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="30dp"
-            android:paddingLeft="4dp"
-            android:paddingRight="4dp"
+            android:layout_marginRight="@dimen/image_count_txt_margin_right"
+            android:layout_marginTop="@dimen/image_count_txt_margin_top"
+            android:paddingLeft="@dimen/image_count_txt_padding_left"
+            android:paddingRight="@dimen/image_count_txt_padding_right"
             android:background="@drawable/rounded_corner"
             android:textColor="@android:color/white"
             android:textSize="@dimen/large_text_size"
@@ -37,8 +37,8 @@
             android:layout_width="@dimen/play_icon_width"
             android:layout_height="@dimen/play_icon_height"
             android:layout_gravity="center"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="150dp"
+            android:layout_marginLeft="@dimen/view_pager_video_icon_margin_left"
+            android:layout_marginTop="@dimen/view_pager_video_icon_margin_top"
             android:scaleType="fitXY"
             android:src="@drawable/play"
             android:visibility="gone" />

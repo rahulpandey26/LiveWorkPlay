@@ -7,19 +7,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="50dp"
+        android:padding="@dimen/send_story_msg_padding"
         android:text="@string/story_Sent_msg"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="@dimen/bigger_text_size"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="@dimen/thank_you_txt_margin_left"
         android:text="@string/thank_you_msg"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="@dimen/bigger_text_size"
         android:textStyle="bold" />
 
 </LinearLayout>

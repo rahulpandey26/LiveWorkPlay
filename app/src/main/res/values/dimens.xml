@@ -45,6 +45,18 @@
     <dimen name="tell_us_padding_left">25dp</dimen>
     <dimen name="tell_us_padding_top">20dp</dimen>
     <dimen name="tell_us_margin_top">380dp</dimen>
+    <dimen name="image_count_txt_margin_right">20dp</dimen>
+    <dimen name="image_count_txt_margin_top">30dp</dimen>
+    <dimen name="image_count_txt_padding_left">4dp</dimen>
+    <dimen name="image_count_txt_padding_right">4dp</dimen>
+    <dimen name="gallery_image_view_pager_height">450dp</dimen>
+    <dimen name="gallery_image_view_pager_padding_left">5dp</dimen>
+    <dimen name="gallery_image_view_pager_padding_right">5dp</dimen>
+    <dimen name="view_pager_video_icon_margin_left">150dp</dimen>
+    <dimen name="view_pager_video_icon_margin_top">150dp</dimen>
+    <dimen name="thank_you_txt_margin_left">100dp</dimen>
+    <dimen name="bigger_text_size">25sp</dimen>
+    <dimen name="send_story_msg_padding">50dp</dimen>
 
 
 </resources>
