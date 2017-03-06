@@ -13,8 +13,6 @@ import android.widget.ImageView;
 
 public class CustomImageView extends ImageView {
 
-    private static float sRadius = 18.0f;
-
     public CustomImageView(Context context) {
         super(context);
     }
@@ -32,7 +30,8 @@ public class CustomImageView extends ImageView {
         //float sRadius = 36.0f;
         Path clipPath = new Path();
         RectF rect = new RectF(15, 15, this.getWidth(), this.getHeight());
-        clipPath.addRoundRect(rect, sRadius, sRadius, Path.Direction.CW);
+        float radius = 18.0f;
+        clipPath.addRoundRect(rect, radius, radius, Path.Direction.CW);
         canvas.clipPath(clipPath);
         super.onDraw(canvas);
     }

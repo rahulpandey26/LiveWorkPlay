@@ -37,7 +37,6 @@ public class GalleryActivity extends AppCompatActivity implements View.OnClickLi
     private GalleryAdapter mGalleryAdapter;
     private List<String> mSelectedGalleryItem = new ArrayList<>();
     private TextView mNextBtn, mItemCountTxt;
-    private ProgressBar mProgressBar;
     private List<GalleryPath> mGalleryPathList = new ArrayList<>();
 
     @Override
@@ -58,7 +57,7 @@ public class GalleryActivity extends AppCompatActivity implements View.OnClickLi
         mNextBtn.setOnClickListener(this);
         mItemCountTxt = (TextView)findViewById(R.id.selected_image_count);
         mItemCountTxt.setText(getResources().getString(R.string.no_item_selected));
-        mProgressBar = (ProgressBar)findViewById(R.id.progressBar);
+        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
         findViewById(R.id.back_arrow).setOnClickListener(this);
     }
 

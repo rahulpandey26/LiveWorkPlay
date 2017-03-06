@@ -5,5 +5,5 @@ package com.robosoft.liveworkplay;
  */
 
 public interface OnSendStoryItemClickedListner {
-    public void onSendStoryItemClicked(int position , String clickType);
+    void onSendStoryItemClicked(int position, String clickType);
 }

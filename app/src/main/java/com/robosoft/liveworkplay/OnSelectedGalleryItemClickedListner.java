@@ -9,5 +9,5 @@ import java.util.List;
  */
 
 public interface OnSelectedGalleryItemClickedListner {
-    public  void onSelectedGalleryItem (int position , String operation);
+    void onSelectedGalleryItem(int position, String operation);
 }

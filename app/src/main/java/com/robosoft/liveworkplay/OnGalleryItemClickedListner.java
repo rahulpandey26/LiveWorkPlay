@@ -5,5 +5,5 @@ package com.robosoft.liveworkplay;
  */
 
 public interface OnGalleryItemClickedListner {
-    public  void onGalleryItemClicked (int position , String clickType);
+    void onGalleryItemClicked(int position, String clickType);
 }

@@ -94,6 +94,7 @@ public class GalleryViewPagerFragment extends Fragment implements OnGalleryItemC
         super.onActivityCreated(savedInstanceState);
         mViewPagerAdapter = new ViewPagerAdapter(getFragmentManager(), mSelectedGalleryItem);
         mViewPager.setAdapter(mViewPagerAdapter);
+        mViewPager.setOffscreenPageLimit(mSelectedGalleryItem.size());
         mViewPager.setCurrentItem(mPosition);
         setAdapter();
 

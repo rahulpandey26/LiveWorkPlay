@@ -11,5 +11,5 @@ import java.util.List;
  */
 
 public interface OnSendAboutImageClickListner {
-    public  void sendAboutImage(HashMap<Integer, ImageStoryDetail> aboutImage);
+    void sendAboutImage(HashMap<Integer, ImageStoryDetail> aboutImage);
 }

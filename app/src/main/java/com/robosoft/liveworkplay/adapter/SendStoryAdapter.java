@@ -37,7 +37,7 @@ public class SendStoryAdapter extends RecyclerView.Adapter<SendStoryAdapter.View
 
     public SendStoryAdapter(SendStoryActivity sendStoryActivity, List<String> selectedItem) {
         mSelectedGalleryData = selectedItem;
-        mSendStoryItemClickedListner = (OnSendStoryItemClickedListner) sendStoryActivity;
+        mSendStoryItemClickedListner = sendStoryActivity;
         mReference = Constants.SEND_STORY_REFERENCE;
     }
 

@@ -58,6 +58,8 @@ public class SendStoryActivity extends AppCompatActivity implements View.OnClick
         mSubmitBtn = (TextView)findViewById(R.id.submit_btn);
         // set done btn in edit text
         mStoryDescText.setImeOptions(EditorInfo.IME_ACTION_DONE);
+        // same to text input type in xml, if u r setting in on create then use setRawInputType
+        //Directly change the content type integer of the text view, without modifying any other state.
         mStoryDescText.setRawInputType(InputType.TYPE_CLASS_TEXT);
         mStoryDescText.addTextChangedListener(mTextEditorWatcher);
         findViewById(R.id.add_image_btn).setOnClickListener(this);
@@ -115,7 +117,7 @@ public class SendStoryActivity extends AppCompatActivity implements View.OnClick
                     saveText();
                     // we have to check for permission is granted or not for above api level 23
                     if (PermissionUtil.isVersionMarshmallowAndAbove() && !PermissionUtil.acessExternalStoragePermission(this)) {
-                        //If the OS version is marshmallow and read contacts permission is not given yet,
+                        //If the OS version is marshmallow and read external storage permission is not given yet,
                         // ask for the permission first
                         PermissionUtil.requestReadExternalStoragePermission(this);
                     } else {
