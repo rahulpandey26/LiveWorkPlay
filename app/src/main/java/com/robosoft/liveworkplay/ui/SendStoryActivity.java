@@ -1,9 +1,7 @@
 package com.robosoft.liveworkplay.ui;
 
-import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -158,7 +156,7 @@ public class SendStoryActivity extends AppCompatActivity implements View.OnClick
                 startActivity(intent);
 
             } else {
-                int rationalState = PermissionUtil.shouldShowRequestPermissionRationaleState(permissions, grantResults, Manifest.permission.READ_CONTACTS, this);
+                int rationalState = PermissionUtil.shouldShowRequestPermissionRationaleState(permissions, grantResults, this);
                 if (rationalState == PermissionUtil.REQUEST_PERMISSION_SHOW_RATIONALE) {
                 } else {
                     showPermissionAlertDialog();

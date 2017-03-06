@@ -2,7 +2,6 @@ package com.robosoft.liveworkplay.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -60,7 +59,7 @@ public class GalleryDetailActivity extends AppCompatActivity implements OnSendAb
         bundle.putInt(Constants.VIEW_PAGER_POSITION , mSelectedPosition);
         bundle.putString(Constants.VIEW_PAGER_REFERENCE , mRef);
         galleryViewPagerFragment.setArguments(bundle);
-        FragmentHelper.replaceFragment(R.id.activity_gallery_detail, galleryViewPagerFragment, getSupportFragmentManager());
+        FragmentHelper.replaceFragment(galleryViewPagerFragment, getSupportFragmentManager());
     }
 
     @Override

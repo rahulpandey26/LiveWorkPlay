@@ -1,29 +1,17 @@
 package com.robosoft.liveworkplay.ui;
 
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.media.ThumbnailUtils;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.text.InputType;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.EditorInfo;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.robosoft.liveworkplay.R;
 import com.robosoft.liveworkplay.Utility.Constants;
 import com.robosoft.liveworkplay.Utility.Util;
-import com.robosoft.liveworkplay.entity.ImageStoryDetail;
 
 import java.util.ArrayList;
 import java.util.List;

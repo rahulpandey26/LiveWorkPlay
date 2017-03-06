@@ -5,20 +5,13 @@ import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.ThumbnailUtils;
-import android.net.Uri;
 import android.provider.MediaStore;
-import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.webkit.MimeTypeMap;
 
 import com.robosoft.liveworkplay.R;
 
-import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-
-import static android.R.attr.bitmap;
-import static android.content.Context.INPUT_METHOD_SERVICE;
 
 /**
  * Created by Rahul Kumar Pandey on 24-02-2017.

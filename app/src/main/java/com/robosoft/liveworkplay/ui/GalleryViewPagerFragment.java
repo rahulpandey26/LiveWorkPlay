@@ -36,6 +36,7 @@ import java.util.List;
  * Created by Rahul Kumar Pandey on 23-02-2017.
  */
 
+@SuppressWarnings("FieldCanBeLocal")
 public class GalleryViewPagerFragment extends Fragment implements OnGalleryItemClickedListner {
 
     private ViewPager mViewPager;
@@ -50,6 +51,7 @@ public class GalleryViewPagerFragment extends Fragment implements OnGalleryItemC
     private ViewPagerAdapter mViewPagerAdapter;
     private String mRef = "";
     private List<Integer> mSelectedPos = new ArrayList<>();
+    @SuppressWarnings("FieldCanBeLocal")
     private String aboutImage;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

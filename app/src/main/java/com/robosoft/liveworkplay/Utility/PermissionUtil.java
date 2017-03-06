@@ -16,7 +16,7 @@ import android.support.v4.app.ActivityCompat;
 public class PermissionUtil {
 
     public static final int REQUEST_PERMISSION_SHOW_RATIONALE = 1;
-    public static final int REQUEST_PERMISSION_DO_NOT_SHOW_RATIONALE = 0;
+    private static final int REQUEST_PERMISSION_DO_NOT_SHOW_RATIONALE = 0;
     public static final int REQUEST_CODE_WRITE_EXTERNAL_STORAGE = 56;
 
     public static boolean isVersionMarshmallowAndAbove(){
@@ -60,14 +60,13 @@ public class PermissionUtil {
      * Check if permission is denied, can show rationale and if permission has been been asked more than once and user has denied the permission with "Never ask again" checked
      * @param permissions
      * @param grantResults
-     * @param requestedPermission
      * @param activity
      * @return 1 = permission has denied, but "Never show again" is not checked. A rationale can be shown before asking the permission again.
      * @return 0 = permission has been been asked more than once and user has denied the permission with "Never ask again" checked.
      * @return -1 = Unknown state.
      *
      */
-    public static int shouldShowRequestPermissionRationaleState(String[] permissions, int[] grantResults, String requestedPermission, Activity activity){
+    public static int shouldShowRequestPermissionRationaleState(String[] permissions, int[] grantResults, Activity activity){
         for (int i = 0, len = permissions.length; i < len; i++) {
             String permission = permissions[i];
             if (grantResults[i] == PackageManager.PERMISSION_DENIED) {
@@ -81,7 +80,7 @@ public class PermissionUtil {
                     // the app setting
                     return REQUEST_PERMISSION_DO_NOT_SHOW_RATIONALE;
 
-                } else if (requestedPermission.equals(permission)) {
+                } else if (Manifest.permission.READ_CONTACTS.equals(permission)) {
                     // user denied WITHOUT never ask again
                     // this is a good place to explain the user
                     // why you need the permission and ask if he want

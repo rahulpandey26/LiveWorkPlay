@@ -33,7 +33,7 @@ public class ImageStoryDetail implements Parcelable {
         this.mImagePath = mImagePath;
     }
 
-    public ImageStoryDetail(Parcel in) {
+    private ImageStoryDetail(Parcel in) {
         mImagePath = in.readString();
         mImageDesc = in.readString();
     }
