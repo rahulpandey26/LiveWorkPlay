@@ -8,11 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.robosoft.liveworkplay.R;
 import com.robosoft.liveworkplay.Utility.Constants;
 import com.robosoft.liveworkplay.Utility.Util;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,17 +25,18 @@ public class GalleryDetailFragment extends Fragment {
     private ImageView mGalleryImage, mSelectedPlayVideoImage;
     private TextView mImageCount;
 
-    public GalleryDetailFragment(List<String> selectedGalleryItem, int position) {
-        mSelectedGalleryItem = selectedGalleryItem;
-        mPosition = position;
-    }
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_gallery_detail, container, false);
         initView(view);
+        getBundleData();
         return view;
+    }
+
+    private void getBundleData() {
+        mPosition = getArguments().getInt(Constants.GALLERY_DETAIL_BUNDLE_DATA_POSITION);
+        mSelectedGalleryItem = getArguments().getStringArrayList(Constants.GALLERY_DETAIL_BUNDLE_DATA_SELECTEDITEM);
     }
 
     private void initView(View view) {

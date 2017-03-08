@@ -22,4 +22,6 @@ public class Constants {
     public static final String VIEW_PAGER_REFERENCE_VALUE = "secondTime";
     public static final String ON_CLICK_TYPE = "onClick";
     public static final String ON_LONG_CLICK_TYPE = "onLongClick";
+    public static final String GALLERY_DETAIL_BUNDLE_DATA_POSITION = "position";
+    public static final String GALLERY_DETAIL_BUNDLE_DATA_SELECTEDITEM = "selectedList";
 }
