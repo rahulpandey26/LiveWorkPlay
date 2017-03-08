@@ -6,13 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
 import com.robosoft.liveworkplay.OnGalleryItemClickedListner;
 import com.robosoft.liveworkplay.R;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import com.robosoft.liveworkplay.OnSendStoryItemClickedListner;
 import com.robosoft.liveworkplay.Utility.Constants;
 import com.robosoft.liveworkplay.Utility.Util;
@@ -29,7 +26,6 @@ public class SendStoryAdapter extends RecyclerView.Adapter<SendStoryAdapter.View
     private List<String> mSelectedGalleryData = new ArrayList<>();
     private OnGalleryItemClickedListner mOnGalleryItemClickedListner;
     private OnSendStoryItemClickedListner mSendStoryItemClickedListner;
-    private int mViewPagerItemPosition;
     private String mReference;
 
     public SendStoryAdapter(SendStoryActivity sendStoryActivity, List<String> selectedItem) {
@@ -105,7 +101,7 @@ public class SendStoryAdapter extends RecyclerView.Adapter<SendStoryAdapter.View
     }
 
     public void getViewPagerItemPosition(int position) {
-        mViewPagerItemPosition = position;
+        int viewPagerItemPosition = position;
     }
 }
 

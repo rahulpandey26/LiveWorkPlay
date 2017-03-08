@@ -56,7 +56,7 @@ public class GalleryActivity extends AppCompatActivity implements View.OnClickLi
         mNextBtn.setOnClickListener(this);
         mItemCountTxt = (TextView)findViewById(R.id.selected_image_count);
         mItemCountTxt.setText(getResources().getString(R.string.no_item_selected));
-        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        //ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
         findViewById(R.id.back_arrow).setOnClickListener(this);
     }
 
@@ -174,13 +174,13 @@ public class GalleryActivity extends AppCompatActivity implements View.OnClickLi
 
         Cursor cursor = cursorLoader.loadInBackground();
 
-        int columnIndex = cursor.getColumnIndex(MediaStore.Video.Thumbnails.DATA);
+        //int columnIndex = cursor.getColumnIndex(MediaStore.Video.Thumbnails.DATA);
 
         if (cursor.moveToFirst()) {
             do {
                 // String data = cursor.getString(cursor.getColumnIndex(MediaStore.Video.Thumbnails.DATA));
                 String image = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));
-                String video = cursor.getString(cursor.getColumnIndex(MediaStore.Video.Media.DATA));
+                //String video = cursor.getString(cursor.getColumnIndex(MediaStore.Video.Media.DATA));
                 mGalleryData.add(image);
 
                 // String uri = cursor.getString(columnIndex);

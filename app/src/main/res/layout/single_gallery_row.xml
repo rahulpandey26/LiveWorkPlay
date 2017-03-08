@@ -10,7 +10,8 @@
         android:layout_width="@dimen/gallery_image_width"
         android:layout_height="@dimen/gallery_image_height"
         android:padding="5dp"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:src="@drawable/defaultimage"/>
 
     <ImageView
         android:id="@+id/play_video_image"
