@@ -1,12 +1,12 @@
 package com.robosoft.liveworkplay.adapter;
 
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
 import com.robosoft.liveworkplay.OnSelectedGalleryItemClickedListner;
 import com.robosoft.liveworkplay.Utility.Constants;
 import com.robosoft.liveworkplay.Utility.Util;
@@ -14,7 +14,6 @@ import com.robosoft.liveworkplay.entity.GalleryPath;
 import com.robosoft.liveworkplay.ui.GalleryActivity;
 import com.robosoft.liveworkplay.R;
 import com.squareup.picasso.Picasso;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,8 +28,8 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
     private OnSelectedGalleryItemClickedListner mOnSelectedGalleryItemClickedListner;
     private List<GalleryPath> mGalleryPathList;
 
-    public GalleryAdapter(GalleryActivity galleryActivity, List<GalleryPath> galleryPath) {
-        mOnSelectedGalleryItemClickedListner = galleryActivity;
+    public GalleryAdapter(OnSelectedGalleryItemClickedListner context, List<GalleryPath> galleryPath) {
+        mOnSelectedGalleryItemClickedListner = context;
         mGalleryPathList = galleryPath;
     }
 
@@ -77,7 +76,9 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private ImageView mImage, mSelectedImage, mPlayVideoImage;
+        private ImageView mImage;
+        private ImageView mSelectedImage;
+        private ImageView mPlayVideoImage;
 
         public ViewHolder(View itemView) {
             super(itemView);

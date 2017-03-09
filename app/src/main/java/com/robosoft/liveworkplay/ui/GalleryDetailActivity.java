@@ -59,7 +59,7 @@ public class GalleryDetailActivity extends AppCompatActivity implements OnSendAb
         bundle.putInt(Constants.VIEW_PAGER_POSITION , mSelectedPosition);
         bundle.putString(Constants.VIEW_PAGER_REFERENCE , mRef);
         galleryViewPagerFragment.setArguments(bundle);
-        FragmentHelper.replaceFragment(galleryViewPagerFragment, getSupportFragmentManager());
+        FragmentHelper.replaceFragment(R.id.activity_gallery_detail , galleryViewPagerFragment, getSupportFragmentManager());
     }
 
     @Override

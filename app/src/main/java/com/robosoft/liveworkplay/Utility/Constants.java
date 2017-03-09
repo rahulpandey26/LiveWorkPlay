@@ -24,4 +24,5 @@ public class Constants {
     public static final String ON_LONG_CLICK_TYPE = "onLongClick";
     public static final String GALLERY_DETAIL_BUNDLE_DATA_POSITION = "position";
     public static final String GALLERY_DETAIL_BUNDLE_DATA_SELECTEDITEM = "selectedList";
+    public static final String GALLERY_DATA = "galleryData";
 }

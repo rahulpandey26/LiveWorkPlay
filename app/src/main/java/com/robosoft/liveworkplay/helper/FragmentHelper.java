@@ -9,9 +9,9 @@ import android.support.v4.app.FragmentTransaction;
  */
 public class FragmentHelper {
 
-    public  static  void  replaceFragment(Fragment fragment, FragmentManager fragmentManager){
+    public  static  void  replaceFragment(int containerId , Fragment fragment, FragmentManager fragmentManager){
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(com.robosoft.liveworkplay.R.id.activity_gallery_detail, fragment);
+        transaction.replace(containerId, fragment);
         transaction.commit();
     }
 }
